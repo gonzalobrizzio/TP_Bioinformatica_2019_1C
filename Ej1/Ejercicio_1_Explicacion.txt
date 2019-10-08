@@ -1,0 +1,11 @@
+Ejercicio 1: Procesamiento de secuencias
+
+Desarrollo
+
+Lo primero de todo fue elegir que enfermedad ibamos a trabajar para posteriormente seleccionar el gen correcto, el cual,
+termino siendo el PRNP, que se encuentra relacionado con la enfermedad de Huntington.
+Luego de buscar dicho gen asociado en la base de datos del OMIM y encontrar las secuencias de referencia, descargamos el 
+transcripto del gen en formato GenBank.
+
+Este scritp del primer ejercicio, realiza lo siguiente :
+Utiliza el archivo descargado, traduce la secuencia (verificando, primero, que sea valida) y por último, genera un nuevo archivo en formato *.fasta con el resultado
