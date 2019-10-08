@@ -9,3 +9,13 @@ transcripto del gen en formato GenBank.
 
 Este scritp del primer ejercicio, realiza lo siguiente :
 Utiliza el archivo descargado, traduce la secuencia (verificando, primero, que sea valida) y por último, genera un nuevo archivo en formato *.fasta con el resultado
+
+Funcionamiento 
+
+En la linea de comandos: 
+
+> perl Ex1.pm [--f archivo_genbank]
+
+Parametros: --f archivo_genbank; Archivo de tipo genbank utilizado como input (por default usa : sequence.gb)
+Input: Archivo en formato GenBank
+Output: Archivo en formato Fasta
