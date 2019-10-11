@@ -1,0 +1,23 @@
+﻿Ejercicio 3
+
+Desarrollo
+
+Principalmente, se buscaron 3 secuencias de distintos organismos, en formato fasta, obtenidos del archivo sequence.blast del ejercicio anterior:
+
+1.NC_030678.1 Xenopus tropicalis strain Nigerian chromosome 2, Xenopus_tropicalis_v9.1, whole genome shotgun sequence.
+2.NC_030726.1 Xenopus laevis strain J chromosome 2L, Xenopus_laevis_v2, whole genome shotgun sequence.
+3.NC_007513.1 Synechococcus sp. CC9902, complete genome
+
+Luego, juntamos estas secuencias con la utilizada en los anteriores ejercicios (la del homo sapiens) en la herramienta de MSA Online, Clustal Omega.
+
+Resultados
+Por un lado obtuvimos la alineación de las secuencias, y las coincidencias entre ellas 
+(las imagenes adjuntas correspondientes a esto son cruzamiento_1.jpeg, cruzamiento_2.jpeg, cruzamiento_3.jpeg, cruzamiento_4.jpeg).
+
+Con la matriz de identidad adjunta (correspondiente a la imagen matriz_identidad.jpeg) y el cladograma (correspondiente a la imagen tree.jpeg).
+A partir de dicho cladograma deducimos que todas las especies estan relacionadas al principio y estas van evolucionando en distintas especies, 
+podemos ver que tanto el xenopus laevis y tropicalis van por la misma rama teniendo una gran cercania (al ser de las familias de las ranas) para 
+luego bifurcarse. Estos tienen un antepasado que los une a ambos con el Synechococcus aunque finalmente, notamos que hay una relacion muy distante 
+entre estas 3 especies y el homo sapiens habiendo un principio que los une pero posteriormente se desunen.
+
+
