@@ -19,3 +19,5 @@ Input: Archivo en formato Fasta.
 Output: Archivo en formato Blast (Texto plano).
 
 Si el script logra ejecutarse correctamente, como resultado se obtendrá un nuevo archivo con el mismo nombre que el utilizado como Input, pero con extensión "*.blast".
+
+La otra forma que tenemos es con remoto, pero no logramos hacerla funcionar en nuestras pcs (tal vez porque nos falta alguna configuracion y es la que toma como default).

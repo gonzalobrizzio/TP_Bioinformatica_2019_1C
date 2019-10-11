@@ -3,7 +3,13 @@ Ejercicio 2.a: BLAST
 Desarrollo
 Se Utilizo el archivo fasta obtenido como resultado del ejercicio 1, como input de este segundo ejercicio.
 De esta manera, el script se encarga de realizar un Blast sobre la secuencia ingresada, y crear un nuevo archivo con los resultados obtenidos. 
-Nota: el blast es ejecutado de manera local, debido a problemas de conexion encontrados en nuestra vm.
+Nota: el blast es ejecutado de manera local, debido a problemas de conexion encontrados en nuestra vm. (Aunque por default, se encuentra configurado para utilizarse en remoto, en caso de tener una vm que logre hacer funcionar bien la base)
+
+Por eso, para correrlo localmente, es necesario descargar la base de datos (ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/swissprot.gz), lo descomprimimos y realizar por consola sobre este archivo el siguiente comando: 
+
+> makeblastdb -in swissprot -dbtype prot
+
+Esto nos generara la base correspondiente y podemos proceder a ejectuar lo siguiente que es el "Funcionamiento".
 
 Funcionamiento 
 

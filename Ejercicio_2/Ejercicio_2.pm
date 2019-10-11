@@ -1,5 +1,3 @@
-#!/bin/perl -w
-
 # Usar 'perl ex2.pm [--f archivo] [--db base_de_datos] [--l] con --l para ejecutarlo localmente, en ese caso, deberias bajar la base y hacer un makeblastdb.
 
 use strict;
