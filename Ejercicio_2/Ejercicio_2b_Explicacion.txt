@@ -1,0 +1,46 @@
+Ejercicio 2.b: Interpretación de resultados
+
+En el archivo obtenido como resultado (sequence.blast) podemos apreciar aquellas proteinas que se alinearon con la nuestra. Algunas obtuvieron mejores resultados, mientras que otras tal vez sean menos significativas.
+
+Entre ellas, la primera que aparece (F7VJQ1.1)
+
+Score = 152 bits (383)
+Expect = 4e-40
+Method: Compositional matrix adjust
+Identities = 73/73 (100%)
+Positives = 73/73 (100%)
+Gaps = 0/73 (0%)
+
+Notamos que tiene un alineamiento del 100%. Ademas, podemos ver que no hubo gaps y que se encuentra todo en armonia.
+
+Analizando otro caso (Q6P4Z2.1):
+
+Score = 56.2 bits (134)
+Expect = 1e-05
+Method: Composition-based stats
+Identities = 113/427 (26%)
+Positives = 144/427 (34%)
+Gaps = 98/427 (23%)
+
+Aca ya notamos un score mucho mas bajo que el anterior con una menor cantidad de concidencias (113/427) y una gran cantidad de gaps (98).
+
+Este bitscore puede utilizarse con el fin de comparar multiples alineaciones y asi conseguir la mejor alineacion posible
+
+Por otro lado, un parámetro importante a tener en cuenta es el Expect (e-value), que se hace referencia a la probabilidad de que las secuencias coincidencia de forma aleatoria. Es decir, cuanto menor sea el valor E, menor será la probabilidad de que la coincidencia de la base de datos sea el resultado aleatoriamente y más significativa será la coincidencia. 
+
+Analizando los resultados correspondientes a la secuencia Q91717.2:
+
+Score = 52.0 bits (123)
+Expect = 2e-04
+Method: Composition-based stats
+Identities = 87/332 (26%)
+Positives = 115/332 (35%)
+Gaps = 70/332 (21%)
+
+Otra vez, tenemos una composicion de positivos y equivalencias baja con altos gaps, este gen esta relacionado con otra especie del mismo organismo utilizado en el anterior analisis (este se corresponde al organismo de African clawed frog y el anterior al Western clawed frog)
+
+Conclusión
+
+A partir de este analisis, podemos concluir que las grandes coincidencias entre las secuencias 
+se refieren a funciones similares (de distintas especies), ya que se trataría de la misma proteína u alguna muy similar.
+

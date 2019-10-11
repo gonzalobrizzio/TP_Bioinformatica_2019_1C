@@ -15,21 +15,20 @@ use Bio::Tools::Run::StandAloneBlastPlus;
 use Getopt::Long;
 
 
-my $file_name = 'sequence.fas';     # Nombre del archivo por default: 'sequence.fas'. 
-my $db = 'swissprot';                    # Base de datos por default: swissprot
+my $file_name = 'sequence.fas';      
+my $db = 'swissprot';                   
 my $local = 0;
-# Verifica opciones de línea de comandos
-GetOptions ('f=s' => \$file_name,   # string: Nombre del archivo
-            'db=s' => \$db,        # string: Base de datos
-            'l' => \$local);      # bool: Base de datos local (1 o 0)
+GetOptions ('f=s' => \$file_name,   
+            'db=s' => \$db,        
+            'l' => \$local);      
 
-my $remote = 1 - $local;                     # Base de datos REMOTA por default.
+my $remote = 1 - $local;                     # Base de datos remota por default #
 
 print '- Archivo: ', $file_name, "\n";
 print '- Base de datos: ', $db;
 print $remote?' (Remota)':' (Local)', "\n";
 
-my $output_file_name = substr $file_name, 0, -4;            # El archivo output va a ser igual al input, pero .blast
+my $output_file_name = substr $file_name, 0, -4;           
 $output_file_name .= '.blast';
 
 my $blast = Bio::Tools::Run::StandAloneBlastPlus->new(
@@ -37,7 +36,7 @@ my $blast = Bio::Tools::Run::StandAloneBlastPlus->new(
    -remote => $remote,
 );
 
-print 'Procesando...';
+print 'Creando archivo...';
 my $result = $blast->blastp( -query => $file_name, -outfile => $output_file_name);
 $blast->cleanup;
-print "Terminado! \n Resultados en: $output_file_name \n";
+print "Archivo terminado! \n Resultados en: $output_file_name \n";

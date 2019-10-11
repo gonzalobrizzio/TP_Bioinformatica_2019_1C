@@ -1,0 +1,23 @@
+Ejercicio 2.a: BLAST
+
+Desarrollo
+Se Utilizo el archivo fasta obtenido como resultado del ejercicio 1, como input de este segundo ejercicio.
+De esta manera, el script se encarga de realizar un Blast sobre la secuencia ingresada, y crear un nuevo archivo con los resultados obtenidos. 
+Nota: el blast es ejecutado de manera local, debido a problemas de conexion encontrados en nuestra vm.
+
+Funcionamiento 
+
+En la linea de comandos: 
+
+> perl Ex2.pm [--f archivo_fasta] [--l] 
+
+Parámetros
+--f: Archivo fasta utilizado como input. (por default usa: sequence.fas)
+--l: Indica que la base de datos es local.
+        
+Input: Archivo en formato Fasta.
+Output: Archivo en formato Blast (Texto plano).
+
+Si el script logra ejecutarse correctamente, como resultado se obtendrá un nuevo archivo con el mismo nombre que el utilizado como Input, pero con extensión "*.blast".
+
+La otra forma que tenemos es con remoto, pero no logramos hacerla funcionar en nuestras pcs (tal vez porque nos falta alguna configuracion y es la que toma como default).
