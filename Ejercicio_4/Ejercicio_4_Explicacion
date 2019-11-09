@@ -1,0 +1,24 @@
+Ejercicio 4: BLAST OUTPUT
+
+Desarrollo
+
+Se utilizo el archivo sequence.blast obtenido en el -Ejercicio 2- como input para este ejercicio
+El script en este caso, se encarga de detectar aquellos hits en los cuales en la descricion se encuentre el patron que sea puesto como parametro en la ejecucion
+
+Ademas, se crean los respectivos archivos -.fasta de cada unos de los hits (coincidencias) encontrados.
+
+Funcionamiento
+
+En la linea de comandos: 
+> perl Ex4.pm [--f archivo_blast] [--p pattern] 
+
+Parametros
+--f: Archivo fasta utilizado como input. (por default usa: sequence.blast)
+--p: Patron a detectar en la descripcion
+
+Como aclaracion, es obligatorio la puesta del patron que vamos a utilizar.
+
+Input: Archivo en formato Blast.
+Output: Archivo en formato Fasta.
+
+Si el script logra ejecutarse correctamente, como resultado se obtendrá, para coincidencia encontrada, un archivo -.fasta con el nombre que le corresponda a cada uno.

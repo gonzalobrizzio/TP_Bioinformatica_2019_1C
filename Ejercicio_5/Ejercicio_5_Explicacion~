@@ -1,0 +1,9 @@
+Desarrollo
+
+Para empezar, se descargaron los archivos prosite (dat y doc) y se paso a realizar la instalacion de EMBOSS con un apt-get.
+
+Todo lo proximo, fue ejecutado a partir de lineas de comando, dado la dificultad para resolver las distintas problematicas, teniendo en cuenta que EMBOSS ya presenta los comandos respectivos para ejecutar todo correctamente.
+
+Primero que nada, usamos "transeq NM_002122.5.fas -frame 6" para calcular las proteinas correspondientes a los 6 marcos de lectura. Dio el mismo resultado que el fasta del ejercicio 1, y con esto, determinamos que es correcto concluyendo en el archivo "ng_009087.pep".
+
+Luego pasamos a realizar la ejecucion de los prosite, teniendo como primer paso la ejecucion de "prosextract" dentro de la consola en el lugar donde se encuentren ambos prosite-s para procesar los datos y poder usarlos correctamente. Posteriormente, ejecutamos el siguiente comando ya en la carpeta del ejercicio, "patmatmotifs NM_002122.5.fas" obteniendo como resultado el archivo "ng_009087.patmatmotifs" en el cual vimos 245 hits, siendo el mayor de longitud 60.
